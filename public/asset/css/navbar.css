@@ -1,0 +1,257 @@
+
+header ul{
+    list-style: none;
+}
+header ul.links-top{
+
+    list-style: none;
+    display: inline-flex;
+}
+
+header ul.links-top li {
+    margin: 10px 15px 0 15px;
+}
+
+header .Done-top{
+    background-color: #ff0303;
+    padding: 12px 36px;
+
+}
+header .Done-top a{
+    text-align: center;
+    line-height: 3;
+    color: #fff;
+}
+
+
+header ul.links-top li a.search{
+    margin-right: -14px;
+    background-color: #cacaca;
+    padding: 13px 20px;
+    border-right: 1px #f34400 solid;
+
+}
+
+.main-links-postion {
+    position: fixed;
+    right:87px;
+    left: 5.7%;
+    z-index: 999;
+    opacity: 0.8;
+}
+
+
+/**main link start-------------------*/
+
+.main-links{
+    background-color: #ffffff75;
+}
+.main-links table{
+width: 100%;
+}
+
+.main-links table tr td{
+background-color: #000000;
+font-size: 24px;
+padding: 20px 0px;
+text-align: center;
+}
+
+.main-links table tr td:not(:last-child){
+border-right: 1px solid #ff0303;
+}
+.main-links table tr td:hover{
+background-color:#cacaca;
+
+}
+
+
+.main-links table tr td a:hover{
+
+color: #000000;
+}
+
+
+td.logo {
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+td.logo a:hover{
+opacity: 0.5;
+}
+
+
+p.sub-p{
+font-size: 20px;
+color: #fff;
+}
+
+
+p.main-p {
+    font-size: 37px;
+    color: #fff;
+    margin-top:40px;
+}
+
+i.fa.fa-bars.fa-2x {
+    color: white;
+}
+
+/* bars icon---------------------------------- */
+.container-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #f5f5f5;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+/* bars icon---------------------------------- */
+
+td.m-link.donate {
+    background-color: #f34400;
+    text-align:center
+}
+
+td.m-link.donate a{
+    font-size: 24px;
+}
+
+
+td.m-link.donate:hover {
+    background-color: #c54614;
+}
+
+td.m-link.donate a:hover{
+    color: white !important;
+}
+
+td.m-link.search-icon {
+    text-align: center;
+}
+
+td.m-link.search-icon a:hover{
+    color: black;
+}
+
+
+td.m-link.search-icon:hover {
+    background-color: #fff;
+}
+
+.modile-nav{
+ display: none ;
+}
+.s-hide{
+    display: none;
+}
+.top-hide{
+    display: none;
+}
+@media only screen and (min-width: 0) and (max-width: 777px) { 
+    
+.show-in-phone{
+ padding-top: 111px;   
+}
+    .s-hide{
+        display: block;
+    }
+    .main-links-postion {
+        right: 0; 
+        left: 0; 
+    }
+    p.main-p {
+        font-size: 33px;
+    }
+    .top_nav,.main-links{
+        display: none;
+    }
+    .modile-nav{
+        display: block !important;
+    }
+
+.main-links table tr td:hover{
+    background-color:#000000;
+    
+    }
+    .main-links table tr td:not(:last-child) {
+        /* border-right: 1px solid #ff0303; */
+        border-right: none !important;
+    }
+    .main-links table tr td {
+        font-size: 30px !important;
+        padding: 15px !important;
+        text-align: left; 
+    }
+
+}
+.dorp ul{
+    font-size: 20px;
+    /* margin-left: -40px; */
+    border-radius: 51px 209px 0px 0px;
+    margin-left: 3px;   
+}
+ul.dorp-m-15 li{
+    
+    padding: 20p 30px;
+}
+ul.dorp-m-15 li a{
+  font-weight: bold;
+}
+
+.dorp ul .sub-drop li{
+    margin: 10px;
+}
+
+.dorp ul li a{
+    color: black;
+}
+
+#Drop_Down{
+    display: none;
+}
+
+menu#Drop_Down {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+.main-links.modile-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+.bg-dedede{
+    background-color: #dedede;
+}
+.top-media a{
+    color: black;
+}
+
+.breadcrumb {
+   
+    background-color: #0a0d10;
+    max-width: fit-content;
+    margin: 50px;
+}
