@@ -1,3 +1,7 @@
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family: 'PT Serif', serif;
     padding: 0;
@@ -27,6 +31,16 @@ body{
 .f-22{
     font-size: 22px !important;
 }
+.social-icon a{
+    color: black;
+    margin: 5px;
+}
+
+
+.social-icon {
+    text-align: center  ;
+}
+
 .instagram:hover{
     color: #045680;
 }
@@ -113,19 +127,105 @@ li.nav-item {
 }
 
 /**contact us**/
-.contact-us{    
+.contact-bg{
+    background-image:url("../image/content-bg-light.jpg");
+
+}
+.last-news-email{    
 background-image:url("../image/newsletter-phone.png");
 background-position: 920px;
 background-repeat: no-repeat;
 } 
+.contact-form {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+    padding: 35px 50px;
+    border-radius: 6px;
+    margin-top: -70px;
+    background-color: #ffffff;
+}
+.contact--info {
+    z-index: 18;
+    position: relative;
+    padding: 35px 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+.contact--info .contact-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.contact--info .contact-list li h6 {
+    color: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (min-width: 0) and (max-width: 777px) { 
+
+.contact--info.mt-50.mb-100 {
+    margin: 20px 0 85px 0;
+}
+
+}
+@media only screen and (min-width: 560px ) and (max-width: 2000px) { 
+
+   .wdith-youtube  iframe{
+         width: 560px !important;
+    }
+
+}
+
+@media only screen and (min-width: 0 ) and (max-width: 560px) { 
+
+   .wdith-youtube  iframe{
+         width: 100% !important;
+    }
+
+}
 
 .logo-footer{
-    text-align: center;
-    background-image: url('../image/logo.png');
+    background-image: url('../image/logo-white.png');
      background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
+    background-position: right;
 }
 footer{
     line-height:2;
+}
+
+.paginate-s3d {
+    margin: 15px;
+}
+
+p.card-text {
+    /* max-block-size: 100px; */
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.bg-img-light{
+    background-image: url('../image/content-bg-light.jpg');
+    background-repeat: no-repeat;
+}
+
+h3.color.h-black {
+    max-height: 236px;
+    overflow: hidden;
+}
+
+button#dropdownId {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+button#dropdownId:hover{
+    border: none;
 }

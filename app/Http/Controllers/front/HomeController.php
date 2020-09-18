@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\front;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Model\Blogs;
 use App\Model\HomePage;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 class HomeController extends Controller
 {
     /**
@@ -14,8 +16,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $lastBlog=Blogs::select('id','blog_title_ar','blog_title_en','blog_ar','blog_en','blog_img')
+                        ->OrderBy('id','desc')
+                        ->limit(1)->get();
        $homes = HomePage::all();
-        return view('front.home',\compact('homes'));
+        return view('front.home',\compact('homes','lastBlog'));
     }
 
     /**

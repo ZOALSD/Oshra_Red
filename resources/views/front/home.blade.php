@@ -12,6 +12,7 @@ asset/image/content-bg-dark.jpg
 {{ $home->main_preghraph_ar }}
 @else
 {{ $home->main_preghraph_en }}
+{{ app('l') }}
 @endif
 @endsection
 
@@ -24,7 +25,7 @@ asset/image/content-bg-dark.jpg
 @endsection
 @section('btn')
 <button class="btn btn-outline-danger">
-  Find Out What We Do &ThinSpace;
+  {{ trans('front.Find_Out') }} &ThinSpace;
   <i class="fas fa-grip-lines-vertical"></i>
   <i class="fas fa-arrow-right"></i>
 </button>
@@ -32,44 +33,61 @@ asset/image/content-bg-dark.jpg
 @section('content')
     
     <!---start section Blog her -->
+  @foreach ($lastBlog as $blog)
+      
     <div class="blog bg-white mt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6 b-red">
-            <h4>Blog</h4>
-            <h2>Our impact, news and views</h2>
-            <a href="#">
+            <h4>{{ trans('front.Blog') }}</h4>
+            <h2>
+              @if (app('l') == 'ar')
+               {{ $blog->blog_title_ar }}
+              @else
+              {{ $blog->blog_title_en }}
+              @endif
+            </h2>
+            <a href="{{ route('blog',$blog->id) }}">
               <h3 class="color h-black">
-                To celebrate our 40th Anniversary, join us in our Big40
-                fundraising challenge!
+                @if (app('l') == 'ar')
+                {{ $blog->blog_ar }}
+                @else
+                {{ $blog->blog_en }}
+                @endif
               </h3>
             </a>
             <i class="fas fa-arrow-right arrow-artical"></i>
-            <a href="" class="color h-black"> read the artical </a>
+            <a href="{{ route('blog',$blog->id) }}" class="color h-black"> read the artical </a>
           </div>
           <div class="col-md-6">
-            <img class="img-thumbnail mt-3" src="asset/image/c3.jpg" />
+            @if (!empty($blog->blog_img))
+            <img class="img-thumbnail mt-3" src="{{ it()->url($blog->blog_img) }}" /> 
+            @else
+            <img class="img-thumbnail mt-3" src="asset/image/c3.jpg" /> 
+            @endif
           </div>
         </div>
       </div>
     </div>
+    @endforeach
+
     <!---End section Blog her -->
 
     <!--start--Please donate -->
     <div class="bg-white mt-5 mb-5 p-5">
       <div class="row">
         <div class="f-30 text-center m-auto">
-          Please donate. Your contribution
+                   {{ trans('front.Please_donate') }}
           <br />
-          is vital.
+          {{ trans('front.is_vital') }}
         </div>
       </div>
       <br />
 
       <div class="row">
         <div class="f-30 text-center m-auto">
-          <button class="btn btn-outline-secondary">Our respons</button>
-          <button class="btn btn-outline-danger">Done now</button>
+          <button class="btn btn-outline-secondary">{{ trans('front.Our_respons') }}</button>
+          <button class="btn btn-outline-danger">{{ trans('front.Done_now') }}</button>
         </div>
       </div>
     </div>
@@ -79,7 +97,7 @@ asset/image/content-bg-dark.jpg
     <br />
     <div class="bg-white">
       <div class="container b-red">
-        <div class="f-30">Where we work</div>
+        <div class="f-30">{{ trans('front.Where_we_work') }}</div>
         <p class="mw-650 mt-3">
           @if (app('l') =='ar')
           {{$home->Where_we_work_ar}}
@@ -136,49 +154,8 @@ asset/image/content-bg-dark.jpg
 
     <br />
 
-    <!-- contact with us ------start -->
-    <div class="bg-blue contact-us">
-      <div class="container p-5">
-        <p class="f-30">Sign up to the OSHRA newsletter</p>
-        <p>
-          Get all the latest news, events and information about upcoming
-          training courses from OSHRA
-        </p>
-        <div class="row">
-          <div class="col-lg-3">
-            <input
-              type="text"
-              name=""
-              placeholder="first name"
-              class="form-control mb-3"
-              id=""
-            />
-          </div>
-          <div class="col-lg-3">
-            <input
-              type="text"
-              name=""
-              placeholder="laste name"
-              class="form-control mb-3"
-              id=""
-            />
-          </div>
-          <div class="col-lg-3">
-            <input
-              type="email"
-              name=""
-              placeholder="Email"
-              class="form-control mb-3"
-              id=""
-            />
-          </div>
-          <div class="col-lg3">
-            <button class="btn btn-danger">Subscript</button>
-          </div>
-        </div>
-      </div>
-    </div>
+   
   
     @endforeach
-
     @endsection
+

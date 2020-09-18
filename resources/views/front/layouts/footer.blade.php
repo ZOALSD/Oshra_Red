@@ -1,84 +1,16 @@
   <!-- contact with us ------end -->
   <footer class="bg-black">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-white mt-20">
+      <div class="row logo-footer">
+        <div class="col-md-6 text-white mt-20 ">
           <span class="f-30 text-white font-weight-bold text-left">
             OSHRA </span
           ><br />
           <small> ORGANIZATION OF SUDANESE HUMAN RIGHTS ABROAD </small>
         </div>
 
-        <div class="col-md-6 text-white mt-20 social-media">
-          <br />
-          <a href="#" class="facebook">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="http://" class="instagram">
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
-          <a href="http://" class="youtube">
-            <i class="fab fa-youtube fa-2x"></i>
-          </a>
-          <a href="http://" class="whatsapp">
-            <i class="fab fa-whatsapp fa-2x"></i>
-          </a>
-
-          <a href="http://" class="telegram">
-            <i class="fab fa-telegram fa-2x"></i>
-          </a>
-
-          <a href="http://" class="twitter">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-        </div>
+      
       </div>
-      <div class="row text-white">
-        <div class="col-md-3 mt-5">
-          <span class="f-20"> Information For </span>
-          <br />
-          <br />
-          <a href="http://"> Our Vision, Mission and Strategy </a>
-          <br />
-          <a href="http://"> Our Vision, Mission and Strategy </a>
-          <br />
-          <a href="http://"> Our Vision, Mission and Strategy </a>
-        </div>
-        <div class="col-md-3 mt-5">
-          <span class="f-20"> Information About </span>
-          <br />
-          <br />
-          <a href="http://"> Our Vision, Mission and Strategy </a>
-          <br />
-          <a href="http://"> Our Vision, Mission and Strategy </a>
-          <br />
-          <a href="http://"> Our Vision, Mission and Strategy </a>
-        </div>
-        <div class="col-md-3 mt-5">
-          <span class="f-20"> Quick links </span>
-          <br />
-          <br />
-          <a href="http://"> Our Work </a>
-          <br />
-          <a href="http://"> training </a>
-          <br />
-          <a href="http://"> Get Invoieds </a>
-        </div>
-        <div class="col-md-3 mt-5">
-          <span class="f-20"> Contact Us </span>
-          <br />
-          <br />
-          <i class="fa fa-map-marked"></i>
-          <a href="http://"> Sudan , Khartoum , Raing of ELgndowl </a>
-          <br />
-          <i class="fa fa-phone"></i>
-          <a href="http://"> phone : +2499022767322 </a>
-          <br />
-          <i class="fa fa-box"></i>
-          <a href="http://"> Email : Infos@oshra.org </a>
-        </div>
-      </div>
-
       <hr style="border-top: 1px solid rgb(255 255 255)" />
       <div class="row text-white">
         <div class="col-lg12 text-center m-auto">
@@ -102,10 +34,12 @@
     }
   </script>
 
-  <script src="{{ url('/') }}/asset/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="{{ url('/') }}/asset/js/jquery-2.2.4.min.js"></script>
   <script src="{{ url('/') }}/asset/js/main.js"></script>
 
   <script src="{{ url('/') }}/asset/js/popper.min.js"></script>
   <script src="{{ url('/') }}/asset/js/bootstrap.min.js"></script>
+  <script src="{{ url('/') }}/asset/js/load.js"></script>
+
 </body>
 </html>

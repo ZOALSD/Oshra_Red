@@ -201,3 +201,51 @@
         </li> 
     </ul> 
 </li>
+<li class="nav-item start {{active_link('blogs','active open')}} ">
+    <a href="javascript:;" class="nav-link nav-toggle">
+        <i class="fa "></i>
+        <span class="title">{{trans('admin.blogs')}} </span>
+        <span class="selected"></span>
+        <span class="arrow {{active_link('blogs','open')}}"></span>
+    </a>
+    <ul class="sub-menu" style="{{active_link('','block')}}"> 
+        <li class="nav-item start {{active_link('blogs','active open')}}  "> 
+            <a href="{{aurl('blogs')}}" class="nav-link "> 
+                <i class="fa "></i>
+                <span class="title">{{trans('admin.blogs')}}  </span>
+                <span class="selected"></span>
+            </a>
+        </li> 
+        <li class="nav-item start"> 
+            <a href="{{ aurl('blogs/create') }}" class="nav-link "> 
+                <i class="fa fa-plus"></i> 
+                <span class="title"> {{trans('admin.create')}}  </span> 
+                <span class="selected"></span> 
+            </a> 
+        </li> 
+    </ul> 
+</li>
+<li class="nav-item start {{active_link('blogsbage','active open')}} ">
+    <a href="javascript:;" class="nav-link nav-toggle">
+        <i class="fa "></i>
+        <span class="title">{{trans('admin.blogsbage')}} </span>
+        <span class="selected"></span>
+        <span class="arrow {{active_link('blogsbage','open')}}"></span>
+    </a>
+    <ul class="sub-menu" style="{{active_link('','block')}}"> 
+        <li class="nav-item start {{active_link('blogsbage','active open')}}  "> 
+            <a href="{{aurl('blogsbage')}}" class="nav-link "> 
+                <i class="fa "></i>
+                <span class="title">{{trans('admin.blogsbage')}}  </span>
+                <span class="selected"></span>
+            </a>
+        </li> 
+        <li class="nav-item start"> 
+            <a href="{{ aurl('blogsbage/create') }}" class="nav-link "> 
+                <i class="fa fa-plus"></i> 
+                <span class="title"> {{trans('admin.create')}}  </span> 
+                <span class="selected"></span> 
+            </a> 
+        </li> 
+    </ul> 
+</li>

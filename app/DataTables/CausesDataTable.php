@@ -26,8 +26,10 @@ class CausesDataTable extends DataTable
     {
         return datatables($query)
             ->addColumn('actions', 'admin.causes.buttons.actions')
-            ->addColumn('image', 'admin.causes.buttons.image')
-            ->addColumn('checkbox', '<label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+
+            ->addColumn('image', 'admin.causes.buttons.image')
+
+            ->addColumn('checkbox', '<label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
 			<input type="checkbox" class="selected_data" name="selected_data[]" value="{{ $id }}"> <span></span></label>')
             ->rawColumns(['checkbox','actions','image',]);
     }
@@ -147,6 +149,11 @@ class CausesDataTable extends DataTable
 
 
 	        
+				[
+          'name'=>'id',
+          'data'=>'id',
+          'title'=>trans('admin.id'),
+ ],    
 				[
                  'name'=>'title_ar',
                  'data'=>'title_ar',

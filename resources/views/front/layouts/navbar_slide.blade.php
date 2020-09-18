@@ -1,24 +1,25 @@
 @php
-$Our_Work_name = "Our Work";   
+$Our_Work_name = __('front.Our_Work');   
 $Our_Work_link = route('OurWork');
-$Training_name="Training And Learing";  
+$Training_name=__('front.Training_Learing');  
 $Training_link ="#"; 
-$Get_Involved_name= "Get Involved";
+$Get_Involved_name=__('front.Get_Involved');
 $Get_Involved_link = "#";
-$About_us_var = "About us";
-$About_us_link = "#";
-$Blog_var = "Blog";
-$Blog_link = "#";
-$lang = "عربي";
-$Contact_us_var ="Contact us";
-$Contact_us_link = "#";
-
+$About_us_var =__('front.About_us');
+$About_us_link = route('about');
+$Blog_var =__('front.Blog');
+$Blog_link = route('BlogBage');
+$Contact_us_var =__('front.Contact_us');
+$Contact_us_link = "#contact_us";
+$Done = route('Done');
 
 if(app('l') == 'ar')
 {
 $lang_link = aurl('lang/en');
+$lang = "English";
 }else{
 $lang_link = aurl('lang/ar');
+$lang = "عربي";
 }
 
     
@@ -34,7 +35,7 @@ $lang_link = aurl('lang/ar');
               <td
                 class="logo"
                 style="background-image: url(asset/image/logo.png)">
-                <a href="#">OSHRA </a>
+                <a href="{{ url('/') }}">OSHRA </a>
               </td>
               <td class="m-link donate">
                 <a href="#">Donate</a>
@@ -60,7 +61,21 @@ $lang_link = aurl('lang/ar');
               <br />
               <li><a href="{{ $Training_link }}">{{ $Training_name }}</a></li>
               <br />
-              <li><a href="{{ $Get_Involved_link }}">{{ $Get_Involved_name }}</a></li>
+              <li>
+                <div class="" role="group">
+                  <a id="dropdownId"
+                   class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                    {{ $Get_Involved_name }}
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">قضايأك</a>
+                    <a class="dropdown-item" href="#">اراء</a>
+                    <a class="dropdown-item" href="#">تطوع معنا</a>
+                    <a class="dropdown-item" href="#">تبرع معنا</a>
+                  </div>
+              </div>
+              </li>
             </ul>
             <ul class="bg-dedede sub-drop">
               <br />
@@ -75,10 +90,10 @@ $lang_link = aurl('lang/ar');
             </ul>
             <div class="col-12 Donate-top text-center">
               <div class=" text-center">
-                   Your contribution is vital.
+                   {{ trans('front.Your_contribution') }}
                 </div>
                 <hr>
-                <button class="btn btn-outline-danger">Done now</button>
+                <button class="btn btn-outline-danger">{{ trans('fornt.Done_now') }}</button>
       
                 </div>
                 <div class="col-md-6 text-white mt-20 social-media top-media">
@@ -116,7 +131,7 @@ $lang_link = aurl('lang/ar');
             <div class="container">
               <div class="top_nav">
                 <span class="Done-top">
-                  <a href="#">Please Done</a>
+                  <a href="{{ $Done }}">{{ trans('front.Please_Done') }}</a>
                 </span>
       
                 <ul class="links-top float-right">
@@ -140,16 +155,30 @@ $lang_link = aurl('lang/ar');
                       class="logo"
                       style="background-image: url(asset/image/logo.png)"
                     >
-                      <a href="#">OSHRA </a>
+                      <a href="{{ url('/') }}">OSHRA </a>
                     </td>
                     <td class="m-link"><a href="{{ $Our_Work_link }}">{{ $Our_Work_name }}</a></td>
                     <td class="m-link">
                       <a href="{{ $Training_link }}">{{ $Training_name }}</a>
                     </td>
-                    <td class="m-link"><a href="{{ $Get_Involved_link }}">{{ $Get_Involved_name }}</a></td>
+                    <td class="m-link">
+                      <div class="btn-group" role="group">
+                        <button id="dropdownId" type="button" class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                          {{ $Get_Involved_name }}
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                          <a class="dropdown-item" href="#">قضايأك</a>
+                          <a class="dropdown-item" href="#">اراء</a>
+                          <a class="dropdown-item" href="#">تطوع معنا</a>
+                          <a class="dropdown-item" href="#">تبرع معنا</a>
+                        </div>
+                    </div>
+                    </td>
                   </tr>
                 </table>
               </div>
+             
       
               <div class="clearfix"></div>
               <div class="row">
@@ -173,6 +202,8 @@ $lang_link = aurl('lang/ar');
               </div>
               <br />
             </div>
-            @yield('breadcrumb')
-              
+
+        
+                
           </header>
+            @yield('breadcrumb')

@@ -1,0 +1,21 @@
+<?php
+return[
+    'Our_Work' => 'اعمالنا',
+    'Training_Learing' => 'Training And Learing',
+    'Get_Involved' => 'Get Involved',
+    'About_us' => 'About us',
+    'Blog' => 'Blog',
+    'Contact_us' => 'Contact us',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+];

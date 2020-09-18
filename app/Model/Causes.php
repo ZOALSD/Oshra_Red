@@ -7,15 +7,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 // Baboon Maker has been Created And Developed By  [It V 1.2 | https://it.phpanonymous.com]
 // Copyright Reserved  [It V 1.2 | https://it.phpanonymous.com]
 class Causes extends Model {
-	use SoftDeletes;
+
+	use SoftDeletes;
 	protected $dates = ['deleted_at'];
 
 protected $table    = 'causes';
 protected $fillable = [
 		'id',
 		'admin_id',
-		              'category_id',
-        'country_id',
 'title_ar',
 'title_en',
 'disc_ar',

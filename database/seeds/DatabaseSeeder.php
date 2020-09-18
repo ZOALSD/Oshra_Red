@@ -13,7 +13,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             
             AdminDataInfo::class,
-            HomeBageSeederData::class
+            HomeBageSeederData::class,
+            CausesSeeder::class
 
         ]);
     }

@@ -65,6 +65,10 @@ Route::post('city/multi_delete','Admin\CityController@multi_delete');
 Route::post('category/multi_delete','Admin\categoryController@multi_delete'); 
 				Route::resource('causes','Admin\CausesController'); 
 Route::post('causes/multi_delete','Admin\CausesController@multi_delete'); 
+				Route::resource('blogs','Admin\BlogsController'); 
+Route::post('blogs/multi_delete','Admin\BlogsController@multi_delete'); 
+				Route::resource('blogsbage','Admin\BlogsBageController'); 
+Route::post('blogsbage/multi_delete','Admin\BlogsBageController@multi_delete'); 
 				//////// Admin Routes /* End */ //////////////
 			});
 

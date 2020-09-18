@@ -1,0 +1,21 @@
+<?php
+return[
+    'Our_Work' => 'Our Work',
+    'Training_Learing' => 'Training And Learing',
+    'Get_Involved' => 'Get Involved',
+    'About_us' => 'About us',
+    'Blog' => 'Blog',
+    'Contact_us' => 'Contact us',
+    'Please_Done' => 'Please Done',
+    'Your_contribution' => 'Your contribution is vital.',
+    'Done_now' => 'Done now',
+    'Find_Out' => 'Find Out What We Do',
+    'Please_donate' => 'Please donate. Your contribution',
+    'is_vital' => 'is vital.',
+    'Our_respons' => 'Our respons',
+    'Where_we_work' => 'Where we work',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+];
