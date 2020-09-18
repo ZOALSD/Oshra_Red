@@ -168,8 +168,7 @@ $lang = "عربي";
                           {{ $Get_Involved_name }}
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                          <a class="dropdown-item" href="#">قضايأك</a>
-                          <a class="dropdown-item" href="#">اراء</a>
+                          <a class="dropdown-item" href="#"></a>
                           <a class="dropdown-item" href="#">تطوع معنا</a>
                           <a class="dropdown-item" href="#">تبرع معنا</a>
                         </div>
