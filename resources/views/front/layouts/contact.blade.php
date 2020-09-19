@@ -102,7 +102,7 @@
                           @csrf
                        
 
-                          <div class="g-recaptcha" data-sitekey="6LeLzMsZAAAAAKbXZsfUPn1_4vKtn_BKsSZZlZv8"></div>
+                          <div class="g-recaptcha max-200" data-sitekey="6LeLzMsZAAAAAKbXZsfUPn1_4vKtn_BKsSZZlZv8"></div>
 <br>    
                           <button class="btn btn-danger">Post A Comment</button>
 
