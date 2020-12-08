@@ -177,7 +177,9 @@ $lang = "عربي";
                   </tr>
                 </table>
               </div>
-             
+             <div class="bg-white text-right pr-5 ">
+               hello
+             </div>
       
               <div class="clearfix"></div>
               <div class="row">
