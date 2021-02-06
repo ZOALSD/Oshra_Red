@@ -1,0 +1,13 @@
+
+
+@media (min-width: 992px) {  
+
+.dropdown-menu.show{
+    position: absolute;
+        transform: translate3d(-79px, 56px, 0px) !important;
+        top: 0px;
+        width: 323px;
+        left: 0px;
+        will-change: transform;
+    }
+}

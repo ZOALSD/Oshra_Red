@@ -181,5 +181,12 @@
 		"other_image"	=>		"other image",
 		"disc"	=>		"Descraption Bage",
 		"image_color"	=>		"imgae_color",
+		"contact"	=>		"الرسائل",
+		"message"	=>		"الرسالة",
+		"tearninglearn"	=>		"صفحة التدريب والتعليم",
+		"main_image"	=>		"صورة الصحفة الرئيسية",
+		"Desc_search"	=>		"وصف الصفحة لمحركات البحث",
+		"sup_p_ar"	=>		"الفقرة العرعية العربية",
+		"sup_p_en"	=>		"الفقرة الفرعية بالانجليزية",
 
 ];

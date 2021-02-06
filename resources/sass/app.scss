@@ -1,1 +1,16 @@
-//
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+//@import 'rtl';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import 'asset/navbar';
+@import 'asset/animation';
+@import 'asset/load';
+//@import 'asset/main';

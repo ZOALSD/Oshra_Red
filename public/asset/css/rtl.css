@@ -1,4 +1,5 @@
 body{
+    font-family: 'Amiri', serif !important;
     direction: rtl !important; 
 }
 
@@ -70,4 +71,9 @@ header .Done-top {
         header .Done-top {
             padding: 0px 52px;
         }
+}
+
+.breadcrumb {
+    margin-right: 5px !important;
+    direction: ltr !important;
 }

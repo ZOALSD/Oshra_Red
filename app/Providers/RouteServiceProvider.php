@@ -55,6 +55,9 @@ class RouteServiceProvider extends ServiceProvider
         include_once base_path('routes/configurations.php');
 
         Route::middleware(['web'])
+            ->group(base_path('routes/live.php'));
+
+        Route::middleware(['web'])
             ->namespace($this->namespace)
             ->group(base_path('routes/admin.php'));
 

@@ -69,6 +69,10 @@ Route::post('causes/multi_delete','Admin\CausesController@multi_delete');
 Route::post('blogs/multi_delete','Admin\BlogsController@multi_delete'); 
 				Route::resource('blogsbage','Admin\BlogsBageController'); 
 Route::post('blogsbage/multi_delete','Admin\BlogsBageController@multi_delete'); 
+				Route::resource('contact','Admin\ContactController'); 
+Route::post('contact/multi_delete','Admin\ContactController@multi_delete'); 
+				Route::resource('tearninglearn','Admin\TearningLearnController'); 
+Route::post('tearninglearn/multi_delete','Admin\TearningLearnController@multi_delete'); 
 				//////// Admin Routes /* End */ //////////////
 			});
 
